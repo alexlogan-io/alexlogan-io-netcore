@@ -1,0 +1,47 @@
+﻿<div ng-app="alexApp" ng-controller="alexAppController">
+    <div class="page-header">
+        <h1><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects</h1>
+    </div>
+    <div ng-repeat="project in projects">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div ng-if="project.category == 'Android'">
+                    <h3 class="panel-title">{{project.title}}&nbsp;<span class="label label-primary">{{project.category}}</span></h3>
+                </div>
+                <div ng-if="project.category == 'Node'">
+                    <h3 class="panel-title">{{project.title}}&nbsp;<span class="label label-success">{{project.category}}</span></h3>
+                </div>
+                <div ng-if="project.category == 'Matlab'">
+                    <h3 class="panel-title">{{project.title}}&nbsp;<span class="label label-warning">{{project.category}}</span></h3>
+                </div>
+            </div>
+            <div class="panel-body">
+                {{project.info}}
+                <br>
+                <!--a href="http://{{project.link}}">Link to project</a-->
+            </div>
+                  <div ng-if
+            <div ng-if="project.authors.length != 0" class="panel-footer">
+                Aditional Credits:
+                <ul>
+                    <div ng-repeat="author in project.authors">
+                        <li>{{author}}</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var app = angular.module('alexApp',[]);
+app.controller('alexAppController',function($scope,$http){
+	$http.get('/projects.json').
+		success(function(data){
+			$scope.projects = data;
+		}).
+		error(function(){
+			console.log("error");
+		});
+});
+</script>

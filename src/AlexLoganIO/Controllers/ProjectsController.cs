@@ -13,6 +13,7 @@ namespace AlexLoganIO.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+            ViewBag.Title = "Projects";
             return View();
         }
     }

@@ -18,7 +18,7 @@
             <div class="panel-body">
                 {{project.info}}
                 <br>
-                <!--a href="http://{{project.link}}">Link to project</a-->
+                <a ng-if="project.link !== ''" href="http://{{project.link}}">Link to project</a>
             </div>
                   <div ng-if
             <div ng-if="project.authors.length != 0" class="panel-footer">

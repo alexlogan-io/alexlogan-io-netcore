@@ -4,28 +4,14 @@
     "title": "Parking Aid",
     "authors": [ "Luke Sapiets", "George Mabey", "Jon Westwood" ],
     "info": "Parking Aid was developed as part of a software engineering project. It is app that allows a user to geotag their car’s location and later use the app to find their way back to the vehicle.",
-    "link": "www.link.com"
+    "link": "https://github.com/alexlogan-io/parkingaid"
   },
   {
     "category": "Android",
     "title": "Marauders Map",
     "authors": [ "Luke Sapiets", "George Mabey", "Jon Westwood" ],
     "info": "Marauders Map was developed as part of a software engineering project. Inspired by the magical map in Harry Potter (that shows the current location of anyone at Hogwarts) this app does almost the same, but on the UEA campus. It allows a user to enter their schools of interest and thus find the current location of lecturers and student guides or ambassadors in the same school.",
-    "link": "www.link.com"
-  },
-  {
-    "category": "Android",
-    "title": "Student Searcher",
-    "authors": [ "Luke Sapiets", "George Mabey", "Jon Westwood" ],
-    "info": "Student Searcher was developed as part of a software engineering project. The general function of this app is as follows. The user will enter their school of interest and attire, then upon request be shown a list of users within a certain distance of them who also share their interests. The user can then pick someone from the list and be shown an arrow to indicate their direction, distance and attire.",
-    "link": "www.link.com"
-  },
-  {
-    "category": "Node",
-    "title": "East London Business Portal",
-    "authors": [ "Adam Ferguson" ],
-    "info": "The East London business portal provides a platform for entrepreneurs to view events and funding opportunities available in East London. The site was prototyped by Adam Ferguson before being taken over by myself. This was my first project using node.",
-    "link": "directory.getsetforgrowth.com:3000"
+    "link": "https://github.com/alexlogan-io/marauders-map"
   },
   {
     "category": "Node",

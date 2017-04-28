@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -12,6 +13,7 @@
     <title>@ViewBag.Title</title>
 
     @RenderSection("Scripts", false)
+    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
